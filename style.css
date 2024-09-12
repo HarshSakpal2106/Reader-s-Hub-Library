@@ -680,5 +680,9 @@ form button:focus {
     width: 80%;
     height: 540px;
   }
+  
+  .bottom-link {
+    font-size: 15px;
+  }
 
 }
