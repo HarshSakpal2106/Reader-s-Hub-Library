@@ -296,7 +296,6 @@ body {
   backdrop-filter: blur(5px);
   width: 100%;
   height: 1308px;
-  position: relative;
   z-index: 9;
   position: fixed;
   top: 0;
@@ -309,26 +308,24 @@ body {
   display: none;
   background-color: white;
   width: 500px;
-  height: 550px;
+  height: 525px;
   border-radius: 50px;
   border: 1.5px solid limegreen;
   padding: 30px;
   box-sizing: border-box;
   z-index: 10;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 25%;
+  position: relative;
+  margin: 100px auto;
 }
 
 .login-content {
-  height: 450px;
+  height: 425px;
 }
 
 .close-btn {
   position: absolute;
-  right: 25px;
   top: 25px;
+  right: 25px;
   cursor: pointer;
   color: limegreen;
   transition: 0.2s linear;
@@ -346,6 +343,7 @@ body {
 .content-h2 {
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 0px;
   color: limegreen;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -673,12 +671,12 @@ form button:focus {
 
   .login-content {
     width: 80%;
-    height: 470px;
+    height: 400px;
   }
 
   .reg-content {
     width: 80%;
-    height: 540px;
+    height: 500px;
   }
   
   .bottom-link {
