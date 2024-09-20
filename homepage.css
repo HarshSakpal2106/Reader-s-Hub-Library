@@ -1325,7 +1325,7 @@ form button:focus {
 @media only screen and (max-width:414px) {
     .sort-menu, 
     .filter-menu {
-        width: 180px;
+        width: 175px;
     }
     
     .sort-option-txt, 
