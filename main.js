@@ -296,7 +296,7 @@ document.querySelector('.apply-btn').addEventListener('click', () => {
         <div class="book-card-info">
           <span class="book-name">${book.bookName}</span>
           <span class="book-author">By ${book.bookAuthor}</span>
-          <span class="book-price">RS.${book.bookPr}</span>
+          <span class="book-price">RS.${book.bookPrice}</span>
           <span class="book-rating">Rating : ${book.bookRating}/5</span>
           <span class="book-date">Published on ${book.bookDate}</span>
         </div>
