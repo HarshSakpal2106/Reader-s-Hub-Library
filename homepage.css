@@ -1321,3 +1321,20 @@ form button:focus {
     }
 
 }
+
+@media only screen and (max-width:414px) {
+    .sort-menu, 
+    .filter-menu {
+        width: 180px;
+    }
+    
+    .sort-option-txt, 
+    .filter-option-txt {
+        font-size: 10px;
+    }
+    
+    .fa-arrow-down, 
+    .fa-arrow-up {
+        font-size: 10px;
+    }
+}
