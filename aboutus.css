@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
+
+.header-logo {
+    height: 100%;
+}
+
+#backBtn {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#backBtn:active {
+    box-shadow: none;
+}
+
+#backBtn:hover {
+    background-color: #C8C8C8;
+}
+
+.student-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-card {
+    display: flex;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid limegreen;
+    border-radius: 25px;
+    margin: 10px auto;
+}
+
+.student-image {
+    width: 200px;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.student-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.student-info {
+    padding: 0px 10px;
+}
+
+.student-info h1 {
+    margin: 5px 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 27px;
+}
+
+.instagram-logo {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.instagram-logo:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0px;
+    }
+
+    .header {
+        height: 50px;
+        width: 100%;
+        background-color: limegreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: relative;
+        top: 0;
+        z-index: 5;
+    }
+
+    .header-logo {
+        height: 100%;
+    }
+
+    #backBtn {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+        background-color: white;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+
+    #backBtn:active {
+        box-shadow: none;
+    }
+
+    #backBtn:hover {
+        background-color: #C8C8C8;
+    }
+
+    .student-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student-card {
+        height: 150px;
+        display: flex;
+        padding: 10px;
+        border: 1px solid limegreen;
+        border-radius: 25px;
+        margin: 10px auto;
+    }
+
+    .student-image {
+        width: 100px;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+    .student-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .student-info {
+        padding: 0px 10px;
+    }
+
+    .student-info h1 {
+        margin: 5px 0px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 17px;
+    }
+
+    .instagram-logo {
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .instagram-logo:hover {
+        transform: scale(1.1);
+    }
+}

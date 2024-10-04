@@ -1,0 +1,1515 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header-logo {
+    height: 100%;
+    margin-left: 20px;
+}
+
+.btn-grp, 
+.dashboard {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.button:focus,
+.button:active {
+    outline: none;
+    box-shadow: 0;
+    -webkit-tap-highlight-color: transparent;
+    color: #A4A4A4;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.display-container {
+    margin-top: 50px;
+    padding: 0px 100px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-type: x mandatory;
+}
+
+.display-scroller {
+    height: 100%;
+    width: 780px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    display: flex;
+    pointer-events: none;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 15px;
+    scroll-snap-type: x mandatory;
+}
+
+.display-scroller div {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    flex-basis: 780px;
+    scroll-snap-align: center;
+}
+
+.display-scroller div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.slide-button {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #DEFFDE;
+    cursor: pointer;
+}
+
+.slide-button.active {
+    background-color: limegreen;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+#pause-button {
+    cursor: pointer;
+    margin: 0px 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 100%;
+}
+
+#pause-button:active,
+#pause-button:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.container {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrow-grp {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    display: flex;
+    background-color: pink;
+    width: 100%;
+}
+
+.pre-btn {
+    position: absolute;
+    left: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #1E9800;
+    background-color: limegreen;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.nxt-btn {
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #1E9800;
+    background-color: limegreen;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.arrow-grp button:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background-color: #1E9800;
+}
+
+.container h1 {
+    margin: 15px 0px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.scroller {
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    gap: 13px;
+}
+
+.card {
+    flex-shrink: 0;
+    flex-basis: 200px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    border: 2px solid green;
+}
+
+.card img {
+    object-fit: cover;
+    height: auto;
+    width: 200px;
+    border-radius: inherit;
+}
+
+.search-container {
+    padding: 0px 5%;
+    margin: 100px 0px;
+
+}
+
+.search-container h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0px;
+}
+
+.search-label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.search-box {
+    display: flex;
+    gap: 50px;
+}
+
+.sort,
+.filter {
+    display: flex;
+    height: 50px;
+}
+
+.sort-button,
+.filter-button {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: limegreen;
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.filter-button {
+    width: 50%;
+}
+
+.sort-button h3,
+.filter-button h3 {
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.sort-button .fa-angle-down,
+.filter-button .fa-angle-down {
+    transition: 0.3s;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+}
+
+.sort-menu {
+    width: 250px;
+    margin: 0px 15px;
+    z-index: 2;
+}
+
+.filter-menu {
+    width: 500px;
+    margin: 0px 15px;
+    z-index: 2;
+}
+
+.genre-dropdown-menu {
+    display: flex;
+}
+
+.genre-dropdown-menu div {
+    width: 50%;
+}
+
+.sort-menu.active .fa-angle-down,
+.filter-menu.active .fa-angle-down {
+    transform: scaleY(-1);
+}
+
+.sort-menu.active .sort-options,
+.filter-menu.active .filter-options {
+    display: block;
+}
+
+.filter-options,
+.sort-options {
+    background-color: rgb(219, 255, 219);
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+}
+
+.sort-option,
+.filter-option {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 10px;
+    transition: 0.2s ease;
+}
+
+.sort-option-txt,
+.filter-option-txt {
+    user-select: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.sort-option:hover,
+.filter-option:hover {
+    background-color: #93A692;
+}
+
+.filter-option:active,
+.sort-option:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background-color: #93A692;
+}
+
+.search-button-grp {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0px;
+}
+
+.search-button-grp button {
+    height: 45px;
+    width: 100px;
+    background-color: limegreen;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    transition: 0.2s ease;
+}
+
+.search-button-grp button:focus,
+.search-button-grp button:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-shadow: none;
+    box-shadow: none;
+}
+
+#book-display {
+    width: 100%;
+    height: 545px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: auto;
+}
+
+.book-display-card {
+    height: 250px;
+    border: 1px solid limegreen;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+}
+
+.book-card-img {
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.book-card-img img {
+    height: 100%;
+    width: auto;
+    border-radius: 5px;
+}
+
+.book-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.book-name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.book-author {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.book-price,
+.book-rating,
+.book-date {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.book-card-btn-grp {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.2s ease;
+}
+
+.book-display-card:hover .book-card-btn-grp {
+    display: block;
+    
+}
+
+.book-card-btns {
+    display: flex;
+    gap: 10px
+}
+
+.book-card-btns button {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+    font-size: 15px;
+    padding: 8px;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    background-color: limegreen;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.book-card-btns button:active {
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+/* FOOTER */
+
+.footer-h1 {
+    margin: 0px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.op-hours {
+    background-color: #D3FFCD;
+    padding: 50px 0px;
+}
+
+.op-hours h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+.download {
+    padding: 25px 0px;
+    background-color: #D3FFCD;
+}
+
+.download div {
+    height: 40px;
+    width: 400px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.download-img {
+    height: 100%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.download-img:hover {
+    transform: scale(1.1);
+}
+
+.download-img:focus,
+.download-img:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gradient-2 {
+    background: linear-gradient(to bottom, #FFFFFF, #D3FFCD);
+    height: 100px;
+}
+
+.end-container {
+    background-color: #D3FFCD;
+    padding: 25px 50px;
+}
+
+.socials {
+    height: 100px;
+}
+
+.socials-app {
+    height: 30px;
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.socials-app img {
+    height: 100%;
+    cursor: pointer;
+    transition: 0.2s ease
+}
+
+.socials-app img:hover {
+    transform: scale(1.1);
+}
+
+.socials-app img:focus,
+.socials-app img:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contact-us {
+    margin: 75px 0px 25px;
+}
+
+.contact-us-1 {
+    padding: 15px 15px;
+}
+
+.contact-us-1 div {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin: 25px 0px;
+}
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h2 {
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-links a:focus,
+.footer-links a:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* PROFILE MODAL */
+.profile-wrapper {
+    display: none;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.profile-box {
+    width: 75%;
+    height: 70%;
+    background-color: white;
+    border: 1.5px solid limegreen;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+.profile-info {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0px 0px 30px 0px;
+}
+
+.profile-content {
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.profile-content h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.profile-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 15px;
+}
+
+#logOutBtn {
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    background-color: limegreen;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: 0.2s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#logOutBtn:active {
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+#profCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: limegreen;
+    transition: 0.2s linear;
+    font-size: 50px;
+}
+
+#profCloseBtn:hover {
+    transform: scale(1.3);
+    outline: none;
+    box-shadow: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* LOGIN & REGISTRATION PAGE */
+
+.wrapper {
+    display: none;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.login-content,
+.reg-content {
+    display: none;
+    background-color: white;
+    width: 500px;
+    height: 525px;
+    border-radius: 50px;
+    border: 1.5px solid limegreen;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 10;
+    position: relative;
+    margin: 100px auto;
+}
+
+.login-content {
+    height: 425px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    color: limegreen;
+    transition: 0.2s linear;
+    font-size: 35px;
+}
+
+.close-btn:hover {
+    transform: scale(1.3);
+    outline: none;
+    box-shadow: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.content-h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: limegreen;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.input-field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding: 0px 15px;
+    border: 1px solid limegreen;
+    border-radius: 25px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #EDFFF2;
+}
+
+.input-field input:is(:focus, :valid) {
+    padding: 16px 20px 0;
+}
+
+.input-field input:focus {
+    border-color: #035F1E;
+}
+
+.input-field input:is(:focus, :valid)~label {
+    font-size: 10px;
+    transform: translateY(-120%);
+    color: limegreen;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: black;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s linear;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.forgot-pass,
+.sign-up,
+.log-in {
+    text-decoration: none;
+    color: limegreen;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: 600;
+    transition: 0.2s linear;
+}
+
+.forgot-pass:hover,
+.sign-up:hover,
+.log-in:hover,
+.forgot-pass:focus,
+.sign-up:focus,
+.log-in:focus {
+    text-decoration: underline;
+    color: #009A2D;
+    box-shadow: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.forgot-pass {
+    display: inline-flex;
+    margin: 25px 0px 0px 15px;
+}
+
+form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 0;
+    border-radius: 25px;
+    margin: 25px 0px;
+    color: black;
+    cursor: pointer;
+    background-color: limegreen;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.2s linear;
+}
+
+form button:hover,
+form button:focus {
+    background-color: #009A2D;
+    outline: none;
+    box-shadow: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bottom-link {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* FOR MOBILE */
+
+@media only screen and (max-width:480px) {
+
+    .header {
+        height: 40px;
+        width: 100%;
+        background-color: limegreen;
+        display: flex;
+        align-items: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+
+    .header-logo {
+        height: 80%;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .btn-grp {
+        position: absolute;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+
+    .button:focus,
+    .button:active {
+        outline: none;
+        box-shadow: 0;
+        -webkit-tap-highlight-color: transparent;
+        color: #A4A4A4;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+    }
+
+    .display-container {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        height: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .display-scroller {
+        width: 85%;
+        height: 225px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        display: flex;
+        /*pointer-events: none;*/
+        -webkit-overflow-scrolling: touch;
+        border-radius: 15px;
+        scroll-snap-type: x mandatory;
+        background-color: lightblue;
+        box-sizing: border-box;
+    }
+
+    .display-scroller div {
+        flex-shrink: 0;
+        flex-basis: 383px;
+        scroll-snap-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .display-scroller div img {
+        width: 383px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    .slide-button {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 50%;
+        background-color: #DEFFDE;
+        cursor: pointer;
+    }
+
+    .slide-button.active {
+        background-color: limegreen;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    #pause-button {
+        cursor: pointer;
+        margin: 0px 15px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        left: 100%;
+    }
+
+    #pause-button:active,
+    #pause-button:focus {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        padding: 10px 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .arrow-grp {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        display: none;
+        background-color: pink;
+        width: 100%;
+    }
+
+    .container h1 {
+        margin: 15px 0px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .scroller {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        gap: 10px;
+    }
+
+    .card {
+        flex-shrink: 0;
+        flex-basis: 133px;
+        position: relative;
+        border: none;
+        overflow: hidden;
+        border: 1px solid green;
+        width: 133px;
+        height: 200px;
+    }
+
+    .card img {
+        object-fit: cover;
+        height: 200px;
+        width: 133px;
+        border-radius: inherit;
+    }
+
+    .search-container {
+        padding: 0px 5%;
+        margin: 50px 0px;
+    }
+
+    .search-container h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 10px 0px;
+        font-size: 25px;
+    }
+
+    .search-label {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        margin: 0px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .search-box {
+        display: flex;
+        gap: 10px;
+    }
+
+    .sort,
+    .filter {
+        display: flex;
+        flex-direction: column;
+        height: 30px;
+    }
+
+    .sort-button,
+    .filter-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        background-color: limegreen;
+        border-radius: 15px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .sort-button h3,
+    .filter-button h3 {
+        margin: 0px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        font-style: normal;
+    }
+
+    .sort-button .fa-angle-down,
+    .filter-button .fa-angle-down {
+        transition: 0.3s;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+    .sort-menu,
+    .filter-menu {
+        width: 200px;
+        margin: 0px;
+        z-index: 2;
+    }
+
+    .sort-menu.active .fa-angle-down,
+    .filter-menu.active .fa-angle-down {
+        transform: scaleY(-1);
+    }
+
+    .sort-menu.active .sort-options,
+    .filter-menu.active .filter-options {
+        display: block;
+    }
+
+    .filter-options,
+    .sort-options {
+        padding: 0px;
+        background-color: rgb(219, 255, 219);
+        padding: 10px;
+        border-radius: 15px;
+        display: none;
+    }
+
+    .sort-option,
+    .filter-option {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 0px 10px;
+        transition: 0.2s ease;
+    }
+
+    .sort-option-txt,
+    .filter-option-txt {
+        user-select: none;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .fa-arrow-down,
+    .fa-arrow-up {
+        font-size: 12px;
+    }
+
+    .sort-option:hover,
+    .filter-option:hover {
+        background-color: #93A692;
+    }
+
+    .filter-option:focus,
+    .filter-option:active,
+    .sort-option:focus,
+    .sort-option:active {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        background-color: #93A692;
+    }
+
+    .search-button-grp {
+        display: flex;
+        gap: 15px;
+        margin: 50px 0px;
+    }
+
+    .search-button-grp button {
+        height: 25px;
+        width: 100px;
+        background-color: limegreen;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        transition: 0.2s ease;
+    }
+
+    .search-button-grp button:focus,
+    .search-button-grp button:active {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+
+    #book-display {
+        width: 100%;
+        height: 545px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .book-display-card {
+        height: 250px;
+        border: 1px solid limegreen;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+    }
+
+    .book-card-img {
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    .book-card-img img {
+        height: 100%;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    .book-card-info {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .book-name {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .book-author {
+        font-family: "Kalam", cursive;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 12px;
+    }
+
+    .book-price,
+    .book-rating,
+    .book-date {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+    }
+
+    .book-card-btn-grp {
+        display: none;
+    }
+
+    .book-display-card:hover .book-card-btn-grp {
+        display: block;
+    }
+
+    .book-card-btns {
+        display: flex;
+        gap: 10px
+    }
+
+    .book-card-btns button {
+        border: 1px solid black;
+        border-radius: 15px;
+        font-size: 8px;
+    }
+
+    .end-container {
+        background-color: #D3FFCD;
+        padding: 25px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-h1 {
+        margin: 0px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .op-hours {
+        background-color: #D3FFCD;
+        padding: 0px;
+    }
+
+    .op-hours h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 10px;
+        margin: 10px 15px;
+    }
+
+    .download {
+        margin: 0px;
+    }
+
+    .download img {
+        width: 70%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .download div {
+        height: 35px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .download-img {
+        height: 100%;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .download-img:focus,
+    .download-img:active {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .socials {
+        height: 100px;
+        margin: 0px;
+    }
+
+    .socials-app {
+        height: 25px;
+        margin: 15px 0px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .socials-app img {
+        height: 100%;
+        width: auto;
+        cursor: pointer;
+        transition: 0.2s ease
+    }
+
+    .socials-app img:hover {
+        transform: scale(1.1);
+    }
+
+    .socials-app img:focus,
+    .socials-app img:active {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .contact-us {
+        margin: 0px 0px;
+    }
+
+
+    .contact-us-1 {
+        padding: 10px 10px;
+    }
+
+    .contact-us-1 div {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 10px;
+        margin: 15px 0px;
+    }
+
+    .fa-solid {
+        padding-right: 10px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0px;
+    }
+
+    .footer-links h2 {
+        margin: 0px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .footer-links a:focus,
+    .footer-links a:active {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+
+
+    /* LOGIN AND REGISTRATION FORM */
+
+    .login-content {
+        width: 80%;
+        height: 400px;
+    }
+
+    .reg-content {
+        width: 80%;
+        height: 500px;
+    }
+
+    .bottom-link {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width:415px) {
+
+    .sort-menu,
+    .filter-menu {
+        width: 175px;
+    }
+
+    .sort-option-txt,
+    .filter-option-txt {
+        font-size: 10px;
+    }
+
+    .fa-arrow-down,
+    .fa-arrow-up {
+        font-size: 10px;
+    }
+}

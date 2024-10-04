@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  margin: 0px;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: limegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header-logo {
+  height: 100%;
+  margin-left: 20px;
+}
+
+.get-started-container {
+  background-color: #D3FFCD;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started-container div {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.get-started-container div span {
+  font-size: 20px;
+}
+
+.slogan {
+  margin: 10px 0px;
+}
+
+.get-started {
+  margin: 10px 0px;
+  background-color: white;
+  border: 1px solid limegreen;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.get-started:focus,
+.get-started:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.get-started:active {
+  background-color: rgba(156, 200, 165, 1);
+  box-shadow: none;
+}
+
+.gradient-1 {
+  background: linear-gradient(to bottom, #D3FFCD, #FFFFFF);
+  height: 50px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats img {
+  width: 50%;
+}
+
+.users-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 25px;
+}
+
+.users-stats div {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.users-stats div h2 {
+  margin: 0px;
+}
+
+.facilities {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 50px 0px 0px;
+  padding: 0px 15%;
+}
+
+.facilities div {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(145, 255, 169, 1));
+  border: 2px solid limegreen;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.facilities div img {
+  height: 50px;
+}
+
+.facilities div h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0px 50px;
+}
+
+.download {
+  padding: 50px;
+}
+
+.download img {
+  width: 60%;
+  display: block;
+  margin: 0px auto;
+}
+
+.download h2,
+.download h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.download h2 {
+  color: lime;
+}
+
+.download div {
+  height: 80px;
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-img {
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.download-img:hover {
+  transform: scale(1.01);
+}
+
+.download-img:focus,
+.download-img:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gradient-2 {
+  background: linear-gradient(to bottom, #FFFFFF, #D3FFCD);
+  height: 100px;
+}
+
+.end-container {
+  height: 500px;
+  background-color: #D3FFCD;
+  padding: 25px 50px;
+}
+
+.socials {
+  height: 100px;
+}
+
+.socials h1 {
+  margin: 0px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.socials-app {
+  height: 50px;
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.socials-app img {
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s ease
+}
+
+.socials-app img:hover {
+  transform: scale(1.1);
+}
+
+.socials-app img:focus,
+.socials-app img:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contact-us {
+  margin: 75px 0px;
+}
+
+.contact-us h1 {
+  margin: 0px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-us-1 {
+  padding: 15px 15px;
+}
+
+.contact-us-1 div {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin: 25px 0px;
+}
+
+.fa-solid {
+  padding-right: 10px;
+}
+
+
+
+
+/* FOR MOBILE SCREEN */
+
+@media screen and (max-width: 480px) {
+
+  .header {
+    height: 40px;
+  }
+
+  .get-started-container div {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 75%;
+  }
+
+  .get-started-container div span {
+    font-size: 10px;
+  }
+
+  .slogan {
+    margin: 10px 0px;
+    font-size: 15px;
+  }
+
+  .get-started {
+    height: 30px;
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .get-started:focus,
+  .get-started:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .get-started:active {
+    background-color: rgba(156, 200, 165, 1);
+    box-shadow: none;
+  }
+
+  .stats img {
+    width: 60%;
+  }
+
+  .users-stats div {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 9px;
+  }
+
+  .users-stats div h2 {
+    font-size: 18px;
+  }
+
+  .facilities {
+    padding: 15px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 50px 0px 0px;
+  }
+
+  .facilities div {
+    background: linear-gradient(to right, #FFFFFF, #C5FFDC);
+    border: 2px solid limegreen;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+
+  .facilities div img {
+    height: 30px;
+  }
+
+  .facilities div h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    margin: 0px 10px;
+  }
+
+  .download {
+    padding: 15px;
+  }
+
+  .download img {
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .download h2,
+  .download h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  .download h2 {
+    color: lime;
+    font-size: 12px;
+    margin: 20px 0px 0px;
+  }
+
+  .download div {
+    height: 35px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .download-img {
+    height: 100%;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .download-img:focus,
+  .download-img:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .end-container {
+    height: 300px;
+    background-color: #D3FFCD;
+    padding: 25px 15px;
+  }
+
+  .socials {
+    height: 100px;
+  }
+
+  .socials h1 {
+    margin: 0px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  .socials-app {
+    height: 25px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .socials-app img {
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+    transition: 0.2s ease
+  }
+
+  .socials-app img:hover {
+    transform: scale(1.1);
+  }
+
+  .socials-app img:focus,
+  .socials-app img:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .contact-us {
+    margin: 35px 0px;
+  }
+
+  .contact-us h1 {
+    margin: 0px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  .contact-us-1 {
+    padding: 10px 10px;
+  }
+
+  .contact-us-1 div {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    margin: 15px 0px;
+  }
+
+  .fa-solid {
+    padding-right: 10px;
+  }
+
+
+
+  /* LOGIN AND REGISTRATION FORM */
+
+  .login-content {
+    width: 80%;
+    height: 400px;
+  }
+
+  .reg-content {
+    width: 80%;
+    height: 500px;
+  }
+
+  .bottom-link {
+    font-size: 15px;
+  }
+
+}
